@@ -1,0 +1,98 @@
+@charset 'utf-8';
+*	{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;}
+
+	
+#wrapper {overflow: hidden; /*предотвращает выпадение плавающего блока из родителя*/
+		min-width: 940px;
+		max-width: 1200px;
+		margin: auto;}
+
+
+header{
+	border-bottom: 2px dotted #789;
+	color: #789;
+	text-align: right;
+	height: 150px; /* высота блока подогнана для картинки */
+	padding: 0 40px;
+	line-height: 29px;/*межстрочный интервал (чтоб текст выровнять посередине) подходит только когда одна строка */
+	
+}
+header img{
+	float: left;}
+header pre{
+	font-size: 250%;
+}
+nav {
+	float: left;
+	padding: 0 10px 0 40px;
+	color: #000;
+	width: 250px;
+}
+nav ul {
+	list-style: none;
+	
+}
+nav a {
+	color: #000;
+	text-decoration: none; /*убр подчерк ссылок*/
+	font-family: Verdana, sana-serif;
+	border: 1px #fff solid; /*display: inline;*/
+	padding: 5px;	
+	display: block;
+	margin-bottom: 5px;
+	border-bottom: 2px dotted #789;
+}
+nav a:hover {
+	background: #789;
+	color: #fff
+}
+nav h2 {
+	font-size: 1.2em;
+	margin: 10px 0 10px -20px; /*margin, в отличии от padding может быть отрицательным и иметь значения AUTO */
+	
+}
+
+
+section{
+
+	margin-left: 300px;
+}
+
+h1 {
+	font-size: 1.5em;
+	padding: 10px;
+	text-align: center;
+}
+section p {padding: 15px;}
+
+section img {padding: 10px;}
+
+div.aa 	{
+	margin-bottom: 5px;
+	font-size: 1.2em;
+	display: table;
+	}
+	
+figure {
+    padding: 10px 0; /* Поля вокруг */
+    /*display: block;  Блочный элемент */
+    float: left; /* Блоки выстраиваются по горизонтали */
+    text-align: center;
+   }
+footer {
+	 background: linear-gradient(to top, #d3d3d3, #fff);
+	 height: 150px;
+	 overflow: auto;
+	 font-size: 150%;
+	 text-align: center;
+	 font-family: Arial, Helvetica, sans-serif;
+	 color: #789;
+}
+footer a {
+	text-decoration: none;
+	color: #000;
+	
+}
